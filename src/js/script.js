@@ -23,42 +23,24 @@ const slider = tns({
   container: '.carousel__inner',
   items: 1,
   slideBy: 'page',
-  autoplay: false,
-  controls: false,
-  nav: false,
-  // nav: true,
-  // navPosition: 'bottom',
-  // navPosition: 'center',
-  // speed: 600,
-  // autoHeight: true,
+	controls: false,
+	// autoplay: 1000,
+	autoplayHoverPause: true,
+	autoplayButtonOutput: false,
+  navPosition: 'bottom',
+  speed: 600,
   responsive: {
-      // autoWidth: true,
-      // edgePadding: 20,
-      // gutter: 20,
-      // nav: true,
-      // navPosition: 'bottom',
-      // fixedWidth: true,
-      // controls: true,
-      // items: 1
-      // },
-      // 700: {
-      //   // gutter: 30
-      // },
-      // 1400: {
-      //   edgePadding: 20,
-      //   gutter: 200,
-      //   // items: 1
+		320: {
+			nav: true,
+			// navPosition: 'top',
+		},
+		768: {
+			nav: false,
+			autoHeight: true,
+		},
+
   },
 
-  // controlsText: [
-  // эти стили должны быть видны через галп но через лайв сервер и так все норм
-  // '<img src="icons/left.svg" width="31px" height="50px">',
-  // '<img src="icons/right.svg" width="31px" height="50px">'
-
-  // с лайв сервера это норм но с галпа не покатит, дома перепрорверь. заодно и в прошлом уроке тоже стили в сцсс файле
-  // '<img src="icons/left.svg">',
-  // '<img src="icons/right.svg">'
-  // ]
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
