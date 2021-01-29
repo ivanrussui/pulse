@@ -28,7 +28,7 @@ const slider = tns({
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
   navPosition: 'bottom',
-  speed: 600,
+	speed: 600,
   responsive: {
 		320: {
 			nav: true,
