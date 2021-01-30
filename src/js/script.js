@@ -36,7 +36,7 @@ const slider = tns({
 		},
 		768: {
 			nav: false,
-			autoHeight: true,
+			// autoHeight: true,это временно выкл потому что когда верстаешь не уобно, меняется высота, отвлекает
 		},
 
   },
