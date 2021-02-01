@@ -32,15 +32,11 @@ const slider = tns({
   responsive: {
 		320: {
 			nav: true,
-			// navPosition: 'top',
 		},
 		768: {
 			nav: false,
-			// autoHeight: true,это временно выкл потому что когда верстаешь не уобно, меняется высота, отвлекает
 		},
-
   },
-
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
