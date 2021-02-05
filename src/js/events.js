@@ -27,7 +27,7 @@ let btn = document.querySelectorAll('.button')[0],
 
 btn.addEventListener('mouseenter', function () {
 	btn.textContent = 'Кликнуть';
-	btn.style.fontSize = '16px';
+	btn.style.fontSize = '16px';					
 });
 
 btn.addEventListener('mouseleave', function () {
