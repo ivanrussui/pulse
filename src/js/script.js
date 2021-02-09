@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Modal
   $('[data-modal=consultation]').on('click', function () {
     $('.overlay, #consultation').fadeIn('slow');
@@ -44,4 +45,7 @@ $(document).ready(function () {
   validateForms('#consultation-form');
   validateForms('#consultation form');
   validateForms('#order form');
+
+	// Masked Input
+	$('input[name=phone').mask("+7 (999) 999-9999");
 });
