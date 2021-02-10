@@ -63,7 +63,7 @@ $(document).ready(function () {
     }).done(function () {
       $(this).find('input').val('');
       $('#consultation, #order').fadeOut();
-      $('.overlay, #thanks').fadeIn('750');
+      $('.overlay, #thanks').fadeIn(750);
 
       $('form').trigger('reset');
     });
