@@ -63,10 +63,26 @@ $(document).ready(function () {
     }).done(function () {
       $(this).find('input').val('');
       $('#consultation, #order').fadeOut();
-      $('.overlay, #thanks').fadeIn(750);
+      $('.overlay, #thanks').fadeIn('750');
 
       $('form').trigger('reset');
     });
+    return false;
+  });
+
+  // Smooth scroll and pageup
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 990) {
+      $('.pageup').fadeIn(500);
+    } else {
+      $('.pageup').fadeOut('slow');
+    }
+  });
+
+  // плавность скролла  ссылки наверх и др напр ссылка перейти в каталог
+  $("a[href^='#']").click(function () {
+    const _href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
   });
 });
