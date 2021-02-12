@@ -80,7 +80,7 @@ $(document).ready(function () {
   });
 
   // плавность скролла  ссылки наверх и др напр ссылка перейти в каталог
-  $("a[href^='#']").click(function () {
+  $("a[href='#up']").click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
@@ -88,5 +88,5 @@ $(document).ready(function () {
 
 	// wow.js anomation 
 	new WOW().init();
-	
+
 });
