@@ -118,6 +118,7 @@ $(document).ready(function () {
   $('form').submit(function (e) {
     e.preventDefault();
 
+		// это условие внутри Ajax чтобы письмо пустым не отправлялось
     if (!$(this).valid()) {
       return;
     }
@@ -136,7 +137,7 @@ $(document).ready(function () {
     return false;
   });
 
-  // Smooth scroll and pageup скролл
+  // кнопка наверх
   $(window).scroll(function () {
     if ($(this).scrollTop() > 990) {
       $('.pageup').fadeIn(500);
@@ -145,7 +146,7 @@ $(document).ready(function () {
     }
   });
 
-  // плавность скролла  ссылки наверх и др напр ссылка перейти в каталог
+  // плавность перехода по всем ссылкам на сайте
   $("a[href='#up']").click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
