@@ -27,7 +27,7 @@ document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 });
 
-// wow.js anomation
+// wow.js animation
 new WOW().init();
 
 $(document).ready(function () {
@@ -136,7 +136,7 @@ $(document).ready(function () {
     return false;
   });
 
-  // Smooth scroll and pageup
+  // pageup
   $(window).scroll(function () {
     if ($(this).scrollTop() > 990) {
       $('.pageup').fadeIn(500);
@@ -145,7 +145,7 @@ $(document).ready(function () {
     }
   });
 
-  // плавность скролла  ссылки наверх и др напр ссылка перейти в каталог
+  // плавность перехода по всем ссылкам на сайте
   $("a[href='#up']").click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
